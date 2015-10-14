@@ -1,0 +1,28 @@
+<!doctype html>
+<html ng-app="postsApp">
+<head>
+  <title>Posts</title>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-resource.min.js"></script>
+  <script src="js/angular-underscore-module.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+  <script type="text/javascript" src="js/postController.js"></script>
+  <script type="text/javascript" src="js/postsFactory.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/posts.css">
+</head>
+<body>
+
+<main ng-controller="PostController as post">
+
+<h1>Loads of Posts</h1>
+
+    <ul>
+      <li ng-repeat="postTitle in posts.postTitle"><a ng-href="{{ post.title }}">{{ post.title }}</a></li>
+    </ul>
+   
+    <!-- <li ng-repeat="pullRequest in dashboard.pullRequests"><a ng-href="{{ pullRequest.html_url }}">{{ pullRequest.title }}</a></li> -->
+
+  </main>
+</body>
+</html>

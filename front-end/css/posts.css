@@ -1,0 +1,35 @@
+/* Structure */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:300,600,600italic,300italic);
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.5;
+  text-align: center;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+form {
+  padding: 2em 0;
+}
+
+input {
+  line-height: 18px;
+  font-size: 16px;
+}
+
+span { 
+  padding: 0 5px;
+  border-radius: 5px;
+}
