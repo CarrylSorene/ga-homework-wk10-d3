@@ -1,8 +1,8 @@
 angular.module('postsApp')
 
-.factory('PostsFactory', function($http, $q) {
+.factory('JsonFactory', function($http, $q) {
   var PostsFactory = {
-    getPosts: function() {
+    getPostTitles: function() {
       var deferred = $q.defer();
 
       $http
@@ -17,7 +17,7 @@ angular.module('postsApp')
         return deferred.promise;
     }
    
-   }
+  }
 
   return PostsFactory;
 });

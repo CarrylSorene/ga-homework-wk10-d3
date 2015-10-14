@@ -1,2 +1,2 @@
 angular
-  .module("postsApp", ['ngResource', 'underscore']);
+  .module("postsApp", []);
